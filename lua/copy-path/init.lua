@@ -12,6 +12,15 @@ local function get_current_node()
     return current_node
 end
 
+local function traversed_nodes_to_path(traversed_nodes)
+    local path = ""
+    for i = #traversed_nodes, 1, -1 do
+        path = path .. traversed_nodes[i]
+        if i ~= 1 then path = path .. "." end
+    end
+    return string.gsub(path, "%.%[", "[")
+end
+
 local M = {}
 
 M.copy_json_path = function(args)
@@ -53,16 +62,8 @@ M.copy_json_path = function(args)
         current_node = current_node:parent()
     end
 
-    local path = ""
-    for i = #traversed_nodes, 1, -1 do
-        path = path .. traversed_nodes[i]
-        if i ~= 1 then path = path .. "." end
-    end
-
-    path = string.gsub(path, "%.%[", "[")
-
+    local path = traversed_nodes_to_path(traversed_nodes)
     vim.fn.setreg(register, path)
-
     print("Path " .. path .. " copied to register " .. register)
 end
 
