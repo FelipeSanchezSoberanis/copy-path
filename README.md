@@ -1,3 +1,7 @@
+# Demo
+
+![Copy path demo](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExaXE4MXVsYnh0YWtrNjNtcjFua2JvMGl0OHN6aG55dDEwdTNlaHgyNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/POkYJ3hAFYuTkf8I6b/giphy.gif)
+
 # Example configuration
 
 ```lua
