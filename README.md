@@ -1,6 +1,6 @@
 # Demo
 
-![Copy path demo](https://raw.githubusercontent.com/FelipeSanchezSoberanis/assets/main/copy-path/demo.gif)
+https://github.com/FelipeSanchezSoberanis/copy-path/assets/59965745/e80b3a7b-da0c-45cf-b01a-56b0dd770797
 
 # Example configuration
 
